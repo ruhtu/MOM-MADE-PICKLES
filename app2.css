@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('login.jpg'); 
+    background-size: cover;
+    margin: 0;
+    padding: 100px ;
+    color: #000000;
+    display: flex; /* Set body to flex layout */
+    justify-content: flex-end; /* Center container horizontally */
+    align-items: center; /* Center container vertically */
+    height: 100vh; /* Set body height to full viewport height */
+}
+
+.login-container {
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 250px;
+    margin-left: 100px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+button {
+    padding: 12px;
+    background-color: #5fef11;
+    color: #090909;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #f7ff1c;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Add fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
